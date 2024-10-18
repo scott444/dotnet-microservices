@@ -6,7 +6,6 @@ internal class CustomerBasket
     public IEnumerable<BasketProduct> Products => _products;
     public required string CustomerId { get; init; }
 
-
     public void AddBasketProduct(BasketProduct basketProduct)
     {
         var existingProduct = _products.FirstOrDefault(i =>
