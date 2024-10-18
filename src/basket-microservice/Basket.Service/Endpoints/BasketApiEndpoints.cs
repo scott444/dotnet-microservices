@@ -26,7 +26,6 @@ public static class BasketApiEndpoints
             basketStore.CreateCustomerBasket(customerBasket);
 
             return TypedResults.Created();
-
         });
 
         routeBuilder.MapPut("/{customerId}", ([FromServices] IBasketStore basketStore, string customerId,
